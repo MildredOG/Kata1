@@ -36,6 +36,8 @@ public class Kata {
             case 1:
              if(p1==30){
                p1=p1+10;
+             }else if(p1==40){
+                 p1=p1+15;
              }else{
                  p1=p1+15;
              }
@@ -43,6 +45,8 @@ public class Kata {
             case 2:
              if(p2==30){
                p2=p2+10;
+             }else if(p2==40){
+                 p2=p2+15;
              }else{
                  p2=p2+15;
              }
@@ -50,18 +54,20 @@ public class Kata {
         
         }
    
-         System.out.println("Puntuacion: \nJ1:" + p1 + "\nJ2:" + p2);
+        System.out.println("Puntuacion: \nJ1:" + p1 + "\nJ2:" + p2);
+        
+        if(p1==40 && p2==40){
+            System.out.println("Match point");
+        }
 
-         if(p1==40){
-             System.out.println("El ganador es el jugador 1 :D");
-             break;        
-           
-         }else if(p2==40){
-             System.out.println("El ganador es el jugador 2 :D");
-             break;
-         }
-         
-         
+        if(p1==55){
+            System.out.println("El ganador es el jugador 1 :D");
+            break;
+        }else if(p2==55){
+            System.out.println("El ganador es el jugador 12 :D");
+            break;
+        } 
+
          System.out.println("Jugador que anoto: ");
          jugador = scan.nextInt();
         
